@@ -18,7 +18,7 @@ public class UseThreadPoll {
             CORE_POOL_SIZE,
             KEEP_ALIVE_TIME,
             TimeUnit.SECONDS,
-            new ArrayBlockingQueue<>(500),
+            new ArrayBlockingQueue<>(1000),
             new ThreadPoolExecutor.AbortPolicy()
     );
 
